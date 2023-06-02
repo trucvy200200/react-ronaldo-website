@@ -1,7 +1,7 @@
 import React, { useEffect, useState, memo } from "react";
 import Tabs from "./Tabs";
 import Education from "./Education";
-// import Experience from "./Experience";
+import Experience from "./Experience";
 // import Awards from "./Awards";
 // import Skills from "./Skills";
 const Resume = () => {
@@ -14,8 +14,8 @@ const Resume = () => {
                     </div>
                     <div className="resume-right">
                         <Education />
-                        {/* <Experience />
-                        <Skills />
+                        <Experience />
+                        {/* <Skills />
                         <Awards /> */}
                     </div>
                 </div>
