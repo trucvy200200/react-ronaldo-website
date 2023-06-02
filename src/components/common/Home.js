@@ -45,18 +45,14 @@ const Home = () => {
         <div id="home" className="sect" ref={ref}>
             <div className="container">
                 <div className="overlay"></div>
-                <div className={`wrapper home_wrapper`}>
-                    <div
-                        className={clsx("home_item_txt", show ? "visible" : "hidden")}
-                        style={{ width: "100%" }}
-                    >
-                        <h3>hey! i'am</h3>
-                        <h2 className="home_author">Ronaldo Fredrickson</h2>
-                        <h2>
-                            I'm a <span ref={el}></span>
-                        </h2>
-                    </div>
+                <div style={{ width: "100%" }} >
+                    <h3>hey! i'am</h3>
+                    <h2 className="home_author">Ronaldo Fredrickson</h2>
+                    <h2>
+                        I'm a <span ref={el}></span>
+                    </h2>
                 </div>
+
 
             </div>
         </div>
