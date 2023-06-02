@@ -1,0 +1,92 @@
+#about {
+  @include centered;
+  @include dimension(100%, 100%);
+  
+}
+.about-wrapper{
+  position:relative;
+  display: flex;
+}
+
+.about-content{
+  flex: 1;
+  position: relative;
+  left: 50px;
+}
+
+h1{ 
+  text-align: left;
+  font-size: 40px;
+  color: black; 
+}
+
+.goals{
+  font-size: 16px;
+  font-weight: 400;
+  @include margin-y(1rem, 2rem);
+  word-wrap: break-word;
+  text-align: left;
+}
+img{
+  
+  height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  
+}
+
+.img-item{
+  
+  flex:1;
+}
+
+.about-list{
+  li{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 1rem;
+  
+    span{
+      &:nth-child(1){
+        font-weight:800;
+        width: 130px;
+        color: black;
+      }
+    }
+  }
+}
+
+.about-count-project{
+  display: flex;
+  margin-top:20px;
+  font-size: 20px;
+  span{
+      &:nth-child(1){       
+        font-weight:800;
+        width: 40px;
+        color: blue;
+      }
+        &:nth-child(2){       
+          font-weight:400;
+          color: black;
+        }
+  }
+}
+
+.branch-wrapper{
+  @include centered;
+  @include dimension(100%, 100%);
+}
+
+.branch-item{
+  width: 200px;
+  justify-content: space-around;
+}
+
+.branch-list{
+  display: flex;
+  margin-top: 20px;
+  gap:70px;
+  flex-basis: 30%;
+}

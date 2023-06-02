@@ -1,0 +1,36 @@
+.navbar-brand{
+  color:black;
+  font-size: 30px;
+  position: relative;
+  margin-left: 20px;
+  max-width: 780px; 
+  font-weight: 900;
+  cursor: pointer;
+  span{
+    color:#fff;
+  }
+  &:after{
+    position: absolute;
+    top: 50%;
+    left: -12px;
+    width: 40px;
+    height:40px;
+    content: "";
+    pointer-events: none;
+    background: #3e64ff;
+    border-radius: 50% 50%;
+    z-index:-1;
+    margin-top: -20px;
+   
+  }
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header{
+  margin-top: 15px
+}
