@@ -9,12 +9,13 @@
 }
 
 .about-content{
+  margin-top: 40px;
   flex: 1;
   position: relative;
   left: 50px;
 }
 
-h1{ 
+h1{
   text-align: left;
   font-size: 40px;
   color: black; 
@@ -22,8 +23,8 @@ h1{
 
 .goals{
   font-size: 16px;
-  font-weight: 400;
-  @include margin-y(1rem, 2rem);
+  font-weight: 300;
+  margin-bottom: 20px;
   word-wrap: break-word;
   text-align: left;
 }
@@ -81,12 +82,30 @@ img{
 
 .branch-item{
   width: 200px;
-  justify-content: space-around;
+  flex-wrap: nowrap;
+  cursor: pointer;
 }
 
 .branch-list{
   display: flex;
   margin-top: 20px;
   gap:70px;
-  flex-basis: 30%;
+  justify-content: space-around;
+}
+
+.button-download{
+  margin-top: 50px;
+  text-transform: capitalize;
+  height: fit-content;
+  width: fit-content;
+  background-color: var(--color-hover);
+  padding: 10px 20px 10px 20px;
+  border-radius: 25px;
+  color: white;
+  font-weight: 800;
+  font-size: 20px;
+  cursor: pointer;
+  &:hover{
+    color: black;
+  }
 }

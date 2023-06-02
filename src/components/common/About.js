@@ -43,28 +43,32 @@ const About = () => {
                             <span>120</span>
                             <span>Project complete</span>
                         </div>
+                        <div className="button-download">
+                            <button>Download CV</button>
+                        </div>
                     </div>
 
                 </div>
                 <div className="branch-wrapper">
                     <ul class="branch-list">
-                        <li class="branch-item">
+                        <li className="branch-item">
                             <img src={partner1} alt='partner1'></img>
                         </li>
-                        <li class="branch-item">
-                            <img src={partner2} alt='partner1'></img>
+                        <li className="branch-item">
+                            <img src={partner2} alt='partner2'></img>
                         </li>
-                        <li class="branch-item">
-                            <img src={partner3} alt='partner1'></img>
+                        <li className="branch-item">
+                            <img src={partner3} alt='partner3'></img>
                         </li>
-                        <li class="branch-item">
-                            <img src={partner4} alt='partner1'></img>
+                        <li className="branch-item">
+                            <img src={partner4} alt='partner4'></img>
                         </li>
-                        <li class="branch-item">
-                            <img src={partner5} alt='partner1'></img>
+                        <li className="branch-item">
+                            <img src={partner5} alt='partner5'></img>
                         </li>
                     </ul>
                 </div>
+
             </div>
 
         </div>
