@@ -31,6 +31,19 @@ const Education = () => {
     return (
         <div id="education">
             <Heading value="Education" />
+            <div className="education-wrapper">
+                {educationContents.map((edu, index) => {
+                    return (
+                        <Content
+                            key={index}
+                            date={edu.date}
+                            heading={edu.heading}
+                            title={edu.title}
+                            desc={edu.desc}
+                        />
+                    );
+                })}
+            </div>
         </div>
     );
 }
