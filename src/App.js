@@ -3,7 +3,7 @@ import Header from "./components/common/header";
 // import Footer from "./components/common/Footer";
 import Home from "./components/common/Home";
 import About from "./components/common/About";
-// import Resume from "./components/resume";
+import Resume from "./components/resume/Resume";
 // import Servies from "./components/services";
 // import Projects from "./components/projects";
 // import Blogs from "./components/blogs";
@@ -16,8 +16,8 @@ function App() {
       <Header />
       <Home />
       <About />
-      {/* <Resume />
-      <Servies />
+      <Resume />
+      {/* <Servies />
       <Projects />
       <Blogs />
       <Hireme />

@@ -1,38 +1,17 @@
-#tabs {
-  transition: all 0.1s linear;
-  top: 180px;
-  position: sticky;
-  margin: 0;
-  ul {
-    li {
-      margin-bottom: 0.8rem;
-      a {
-        color: #000000;
-        font-weight: 700;
-        position: relative;
-        transition: 0.3s all ease;
-        &::before {
-          content: "";
-          position: absolute;
-          top: 50%;
-          left: -24px;
-          width: 0;
-          height: 2px;
-          -webkit-transform: translateY(-50%);
-          -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-          background: var(--color-hover);
-          transition: 0.3s all ease;
-        }
-        &.current {
-          color: var(--color-hover);
-          margin-left: 20px;
-          position: relative;
-          &:before {
-            width: 20px;
-          }
-        }
-      }
-    }
+.tab-link{
+  span{
+    position:relative;
+  }&:hover{
+    color:var(--color-hover);
+    span:before{
+      content:"";
+      position: absolute;
+      width :18px;
+      height:2px;
+      left: -20px;
+      bottom: 10px;
+      background: var(--color-hover);
+      visibility: visible;    
+    } 
   }
 }
