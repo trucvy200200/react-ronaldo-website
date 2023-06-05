@@ -2,11 +2,11 @@ import React, { useEffect, useState, memo } from "react";
 import Tabs from "./Tabs";
 import Education from "./Education";
 import Experience from "./Experience";
-// import Awards from "./Awards";
-// import Skills from "./Skills";
+import Awards from "./Awards";
+import Skills from "./Skills";
 const Resume = () => {
     return (
-        <div id="resume">
+        <div id="resume" className="sect">
             <div className="container" >
                 <div className="resume-wrapper">
                     <div className="resume-left">
@@ -15,8 +15,8 @@ const Resume = () => {
                     <div className="resume-right">
                         <Education />
                         <Experience />
-                        {/* <Skills />
-                        <Awards /> */}
+                        <Skills />
+                        <Awards />
                     </div>
                 </div>
             </div>

@@ -4,7 +4,7 @@ import {
 } from "../../assets";
 const About = () => {
     return (
-        <div id="about">
+        <div id="about" className="sect">
             <div className="container">
                 <div className="about-wrapper">
                     <div className="img-item">
@@ -50,7 +50,7 @@ const About = () => {
 
                 </div>
                 <div className="branch-wrapper">
-                    <ul class="branch-list">
+                    <ul className="branch-list">
                         <li className="branch-item">
                             <img src={partner1} alt='partner1'></img>
                         </li>

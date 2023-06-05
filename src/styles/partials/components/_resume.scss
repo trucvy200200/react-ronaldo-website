@@ -70,3 +70,191 @@
   }
   }
 }
+#skills {
+  .skills-wrapper {
+    @include grid-cols(3, 1fr, 30px);
+    @include devices(lg) {
+      display: flex;
+      flex-direction: column;
+    }
+    .skills_item {
+      box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+      padding: 1.5em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      .title {
+        line-height: 1.5;
+        color: black;
+        font-weight: 700;
+        margin-bottom: 1.5em;
+        text-align: center;
+        font-size: 19px;
+      }
+
+      // -- vars
+      $default-size: 150px;
+
+      // -- mixins
+      @mixin size($width, $height) {
+        height: $height;
+        width: $width;
+      }
+
+      .set-size {
+        font-size: 10em;
+      }
+
+      .charts-container {
+        &:after {
+          clear: both;
+          content: "";
+          display: table;
+        }
+      }
+
+      .pie-wrapper {
+        @include size($default-size, $default-size);
+        float: left;
+        position: relative;
+
+        &.progress {
+          .pie {
+            .half-circle {
+              border-color: var(--color-hover);
+            }
+          }
+        }
+
+        &:nth-child(3n + 1) {
+          clear: both;
+        }
+
+        .pie {
+          @include size(100%, 100%);
+          clip: rect(0, $default-size, $default-size, $default-size / 2);
+          left: 0;
+          position: absolute;
+          top: 0;
+
+          .half-circle {
+            @include size(100%, 100%);
+            border: 6px solid var(--color-hover);
+            border-radius: 50%;
+            clip: rect(0, $default-size / 2, $default-size, 0);
+            left: 0;
+            position: absolute;
+            top: 0;
+          }
+        }
+
+        .label {
+          border-radius: 50%;
+          cursor: default;
+          display: block;
+          position: absolute;
+          text-align: center;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          line-height: 1.5;
+          color: black;
+          font-weight: 700;
+          font-size: 2rem;
+
+          .smaller {
+            font-size: 0.45em;
+            top: -0.5em;
+            position: relative;
+            font-size: 80%;
+            font-weight: 400;
+          }
+        }
+
+        .shadow {
+          @include size(100%, 100%);
+          border: 6px solid #eeeeee;
+          border-radius: 50%;
+        }
+      }
+
+      .desc {
+        margin-top: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &-left {
+          border-right: 1px solid #dee2e6;
+        }
+        &-left,
+        &-right {
+          padding-right: 15px;
+          padding-left: 15px;
+          padding-right: 15px;
+          padding-left: 15px;
+        }
+        .number {
+          line-height: 1.5;
+          color: black;
+          font-weight: 700;
+        }
+        .date {
+          font-size: 80%;
+          font-weight: 400;
+          line-height: 0.5;
+        }
+      }
+    }
+  }
+
+  /*  */
+
+  .others {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+    .skills-bar {
+      width: calc(50% - 30px);
+      .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 16px;
+        margin-bottom: 10px;
+        font-weight: 500;
+        line-height: 1.5;
+        color: black;
+      }
+      .bottom {
+        box-shadow: none;
+        height: 10px;
+        background: #e6e6e6;
+        overflow: visible;
+        border-radius: 0.25rem;
+        .above {
+          box-shadow: none;
+          font-size: 12px;
+          height: 100%;
+          line-height: 1.2;
+          color: #000000;
+          font-weight: 600;
+          position: relative;
+          overflow: visible;
+          -webkit-border-radius: 2px;
+          -moz-border-radius: 2px;
+          -ms-border-radius: 2px;
+          border-radius: 2px;
+          background: var(--color-hover);
+        }
+      }
+    }
+    @include devices(md) {
+      .skills-bar {
+        width: 100%;
+      }
+    }
+  }
+}

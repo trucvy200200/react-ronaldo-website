@@ -1,17 +1,24 @@
-.tab-link{
-  span{
-    position:relative;
-  }&:hover{
-    color:var(--color-hover);
-    span:before{
-      content:"";
-      position: absolute;
-      width :18px;
-      height:2px;
-      left: -20px;
-      bottom: 10px;
-      background: var(--color-hover);
-      visibility: visible;    
-    } 
+
+#tabs{
+  top: 180px;
+  position: sticky;
+  .tab-link{
+    span{
+      position:relative;
+    }
+
+    &:hover{
+      color:var(--color-hover);
+      span:before{
+        content:"";
+        position: absolute;
+        width :18px;
+        height:2px;
+        left: -20px;
+        bottom: 10px;
+        background: var(--color-hover);
+        visibility: visible;    
+      } 
+    }
   }
 }
