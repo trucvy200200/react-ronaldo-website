@@ -6,10 +6,10 @@ const Box = (pros) => {
         <div id="box" className="box-wrapper">
             <FontAwesomeIcon className="icon" icon="lightbulb" />
             <div className="box-name">
-                {pros.name}
+                {name}
             </div>
             <div className="box-content">
-                {pros.content}
+                {content}
             </div>
         </div>
     );

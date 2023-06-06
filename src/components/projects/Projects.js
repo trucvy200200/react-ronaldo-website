@@ -1,5 +1,6 @@
 import React from "react";
 import * as images from "../../assets/projects_image";
+import Count from "../projects/Counter";
 import Box from "./Box"
 const projects = [
     {
@@ -33,6 +34,13 @@ const projects = [
         desc: "Web Design",
     },
 ];
+const counts = [
+    { number: 100, title: "Awards" },
+    { number: 1200, title: "Complete Projects" },
+    { number: 1200, title: "Happy Customers" },
+    { number: 500, title: "Cups of coffee" },
+];
+
 const Projects = () => {
     return (
         <div id="projects" className="sect">
@@ -50,6 +58,19 @@ const Projects = () => {
                     )
                 })}
             </div >
+            <div className="container">
+                <div className="count-wrapper">
+                    {counts.map((count, index) => {
+                        return (
+                            <div className="count-item">
+                                <Count key={index}
+                                    number={count.number}
+                                    title={count.title} />
+                            </div>
+                        )
+                    })}
+                </div>
+            </div>
         </div>
     );
 }

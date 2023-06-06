@@ -6,7 +6,7 @@ import About from "./components/common/About";
 import Resume from "./components/resume/Resume";
 import Servies from "./components/services/Services";
 import Projects from "./components/projects/Projects";
-// import Blogs from "./components/blogs";
+import Blogs from "./components/blogs/Blogs";
 // import Hireme from "./components/hireme";
 // import Contact from "./components/contact";
 
@@ -81,8 +81,8 @@ function App() {
       <Resume />
       <Servies />
       <Projects />
-      {/* <Blogs />
-      <Hireme />
+      <Blogs />
+      {/* <Hireme />
       <Contact />
       <Footer /> */}
     </>

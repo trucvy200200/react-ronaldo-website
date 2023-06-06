@@ -1,5 +1,6 @@
 import React, { memo } from "react";
-import Box from "./Box"
+import Box from "./Box";
+
 const boxes = [{
     name: "Web Design",
     content: "A small river named Duden flows by their place and supplies it with neccessary regelialia."
@@ -45,6 +46,7 @@ const Services = () => {
 
                     );
                 })}
+
             </div>
         </div >
     );
